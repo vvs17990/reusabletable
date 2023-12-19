@@ -1,0 +1,36 @@
+table{
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     border-collapse: collapse;
+} 
+thead{
+    background-color: wheat;
+}
+td,th{
+    border: 1pc #dddddd solid;
+    text-align: center;
+    padding: 8px;
+    resize: horizontal;
+    overflow: hidden;
+
+}
+th{
+    position: relative;
+}
+th::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 10px; /* Set the width of the resizing handle */
+    cursor: ew-resize; /* Set the cursor style */
+    background-color: lightgray;
+}
+tr:nth-child(even){
+    background-color: wheat;
+}
+
+tr:hover{
+    background-color: violet;
+}
